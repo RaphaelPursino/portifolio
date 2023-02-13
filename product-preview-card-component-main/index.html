@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+    @media screen and (min-width: 600px) {
+
+      body {
+        display: flex;
+        min-height: 97vh;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(30, 38%, 92%);
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.875rem;
+      }
+
+      .container {
+        display: flex;
+        min-height: 60vh;
+        width: 35rem;
+        background-color: white;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        transition: width .3s, height .3s;
+        transition-timing-function: ease;
+      }
+
+      .imagem {
+        background-image: url(images/image-product-desktop.jpg);
+        width: 50%;
+        background-size: cover;
+      }
+
+      .texto {
+        width: 50%;
+        padding: 1.8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .descricao {
+        color: hsl(228, 12%, 48%);
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+      }
+
+      .perfume {
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+        color: hsl(228, 12%, 48%);
+        font-size: 0.7rem;
+      }
+
+      .texto > h1 {
+        font-family: 'Fraunces', serif;
+        font-size: 2rem;
+        line-height: 1.9rem;
+      }
+
+      .preco {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      .preco1 {
+        font-family: 'Fraunces', serif;
+        font-size: 1.8rem;
+        color: hsl(158, 36%, 37%);
+        margin-right: 1rem;
+      }
+
+      .preco2 {
+        text-decoration:line-through;
+        color: hsl(228, 12%, 48%);
+        font-size: 0.8rem;
+      }
+
+      .botao {
+        background-color: hsl(158, 36%, 37%);
+        display: flex;
+        border-radius: 0.7rem;
+        justify-content: center;
+        align-items: center;
+        padding: 0.9rem;
+      }
+
+      .botao img {
+        width: 0.9rem;
+        height: 0.9rem;
+        margin-right: 0.7rem;
+      }
+
+      .botao p {
+        color: hsl(30, 38%, 92%);
+        font-weight: 700;
+      }
+
+      .botao:hover {
+        background-color: hsl(212, 21%, 14%);
+        cursor: pointer;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      body {
+        display: flex;
+        min-height: 97vh;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(30, 38%, 92%);
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.875rem;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        width: 19rem;
+        background-color: white;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        transition: width .3s, height .3s;
+        transition-timing-function: ease;
+      }
+
+      .imagem {
+        background-image: url(images/image-product-mobile.jpg);
+        height: 13.5rem;
+        background-size: cover;
+        background-position: top;
+      }
+
+      .texto {
+        padding: 1.4rem;
+        display: flex;
+        gap: 0.8rem;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .descricao {
+        color: hsl(228, 12%, 48%);
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+      }
+
+      .perfume {
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+        color: hsl(228, 12%, 48%);
+        font-size: 0.7rem;
+      }
+
+      .texto > h1 {
+        font-family: 'Fraunces', serif;
+        font-size: 1.7rem;
+        line-height: 1.9rem;
+        color: hsl(212, 21%, 14%);
+      }
+
+      .preco {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      .preco1 {
+        font-family: 'Fraunces', serif;
+        font-size: 1.8rem;
+        color: hsl(158, 36%, 37%);
+        margin-right: 1rem;
+      }
+
+      .preco2 {
+        text-decoration:line-through;
+        color: hsl(228, 12%, 48%);
+        font-size: 0.8rem;
+      }
+
+      .botao {
+        background-color: hsl(158, 36%, 37%);
+        display: flex;
+        border-radius: 0.5rem;
+        justify-content: center;
+        align-items: center;
+        padding: 0.75rem;
+      }
+
+      .botao img {
+        width: 0.9rem;
+        height: 0.9rem;
+        margin-right: 0.7rem;
+      }
+
+      .botao p {
+        color: hsl(30, 38%, 92%);
+        font-weight: 600;
+      }
+
+      .botao:hover {
+        background-color: hsl(212, 21%, 14%);
+        cursor: pointer;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+     <div class="imagem"></div> 
+     <div class="texto">
+      <p class="perfume">Perfume</p>
+      <h1>Gabrielle Essence Eau De Parfum</h1>
+      <p class="descricao">
+        A floral, solar and voluptuous interpretation composed by Olivier Polge,
+        Perfumer-Creator for the House of CHANEL.
+      </p>
+      <div class="preco">
+        <p class="preco1">$149.99</p>
+        <p class="preco2">$169.99</p>
+      </div>
+      <div class="botao">
+        <img src="images/icon-cart.svg" alt="cart">
+        <p>Add to Cart</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

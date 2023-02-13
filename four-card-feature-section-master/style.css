@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+/*font-family: 'Poppins', sans-serif;*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+header {
+    color: hsl(234, 12%, 34%);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+header h1 {
+    font-weight: 200;
+}
+
+header p {
+    color: hsl(229, 6%, 66%);
+    font-size: 0.9rem;
+    margin-top: 5px;
+    max-width: 500px;
+}
+
+.powered {
+    font-weight: 600
+}
+
+.cards {
+    display: grid;
+    grid-template-areas: ". r ."
+                         "c r b"
+                         "c o b"
+                         ". o .";
+    gap: 1.6rem;        
+}
+
+.cards .img {
+    align-self: flex-end;
+    margin-top: 1.5rem;
+}
+
+.cards h2 {
+    color: hsl(234, 12%, 34%);;
+}
+
+.cards p {
+    color: hsl(229, 6%, 66%);;
+}
+
+.card1, .card2, .card3, .card4 {
+    box-shadow: 0 1px 10px hsl(229, 6%, 66%);
+    border-radius: 5px;
+    max-width: 300px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card1 {
+    border-top: 4px solid hsl(180, 62%, 55%);
+    grid-area: c;
+}
+
+.card2 {
+    border-top: 4px solid hsl(0, 78%, 62%);
+    grid-area: r;
+}
+
+.card3 {
+    border-top: 4px solid hsl(34, 97%, 64%);
+    grid-area: o;
+}
+
+.card4 {
+    border-top: 4px solid hsl(212, 86%, 64%);
+    grid-area: b;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .container {
+        height: 100%;
+    }
+
+    header {
+        margin-top: 2rem;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    .card1, .card2, .card3, .card4 {
+        max-width: 800px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cards {
+        max-width: 300px;
+    }
+
+    header p {
+        max-width: 320px;
+        margin: auto;
+    }
+}

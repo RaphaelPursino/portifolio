@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+/*font-family: 'League Spartan', sans-serif;*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'League Spartan', sans-serif;
+    background-color: white;
+    background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+    background-position: left -185px top -236px, right 10px bottom -100px;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-size: contain, contain;
+  }
+
+  h1 {
+    font-weight: 800;
+    font-size: 48px;
+    color: hsl(300, 43%, 22%);
+    letter-spacing: -2.5px;
+    line-height: 1.1;
+    max-width: 350px;
+    padding-bottom: 1.2rem;
+  }
+
+  h2 {
+    font-size: 13px;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+  }
+
+  .header p {
+    font-weight: 400;
+    font-size: 1rem;
+    align-self: baseline;
+    line-height: 1.4;
+    letter-spacing: -0.5px;
+    color: hsl(303, 10%, 53%);
+    max-width: 480px;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: 3rem 1.5rem;
+  }
+
+  .cima {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+    padding-bottom: 3rem;
+  }
+
+  .rate {
+    display: flex;
+    gap: 36px;
+    width: 28rem;
+    align-items: center;
+    padding: 1.25rem 2rem;
+    color: hsl(300, 43%, 22%);
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 0.5rem;
+    transition: ease-in-out 0.3s;
+    margin-top: 16px;
+  }
+
+  #segundo {
+    margin-left: 3rem;
+  }
+
+  #terceiro {
+    margin-left: 6rem;
+  }
+
+  .avaliations {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.8rem;
+  }
+
+  .profile-photo img {
+    display: block;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .user {
+    padding: 2.5rem 2.2rem;
+    border-radius: 10px;
+    background-color: hsl(300, 43%, 22%);
+    transition: ease-in-out 0.3s;
+  }
+
+  .profile-info {
+    display: flex;
+    flex-direction: row;
+    gap: 1.1rem;
+  }
+
+  .profile-name h3 {
+    color: white;
+  }
+
+  .profile-name h4 {
+    color: hsl(333, 80%, 67%);
+    font-weight: 400;
+    font-size: 1rem;
+    padding-top: 0.2rem;
+  }
+
+  .user p {
+    font-weight: 200;
+    line-height: 1.5;
+    padding-top: 1.5rem;
+    color: white;
+  }
+
+  #user2 {
+    margin-top: 2.5rem;
+  }
+
+  #user3 {
+    margin-top: 5rem;
+  }
+
+  @media (max-width: 900px) {
+    .rating {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .rate {
+      padding: 20px 20px;
+      width: 180px;
+      gap: 10px;
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 600px) {
+    body {
+        background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+        background-position: left -24px top -5px, right -15px bottom -220px;
+      }
+    
+      .cima {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+      }
+
+      .container {
+        margin-top: 5rem;
+      }
+    
+      .header p {
+        padding-top: 0;
+        margin: 12px;
+      }
+    
+      .product__ad {
+        gap: 2rem;
+        padding-bottom: 2rem;
+      }
+    
+      .rate {
+        width: 100%;
+      }
+    
+      .avaliations {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    
+      #user2, #user3 {
+        margin-top: 0;
+      }
+
+      #segundo, #terceiro {
+        margin-left: 0;
+      }
+
+     
+    }
+  
+  
