@@ -1,0 +1,360 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    transition: .3s;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+body {
+    background-color: white;
+    background-image: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+}
+
+h1,
+h2,
+h3 {
+    color: #4c545d
+}
+
+p {
+    color: #9fabb2;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+header>img {
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+header>h1 {
+    margin-bottom: 1rem;
+}
+
+header>p {
+    margin: auto;
+    margin-bottom: 2rem;
+    width: 30rem;
+}
+
+.btns {
+    margin: auto;
+}
+
+button {
+    margin: 0rem .3rem;
+    width: 12rem;
+    padding: 1rem;
+    border-radius: 30rem;
+    border: none;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.btn1 {
+    border-bottom: #28a08e 3px solid;
+    background-color: #26baa4;
+    box-shadow: 0px 10px 20px #26baa47a;
+}
+
+.btn1:hover {
+    background-color: #26baa4ce;
+}
+
+.btn2 {
+    border-bottom: #4b59c5 3px solid;
+    background-color: #6173ff;
+    box-shadow: 0px 10px 20px #6173ff7a;
+}
+
+.btn2:hover {
+    background-color: #6173ffd3;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+div.content0 {
+    width: 35rem;
+    margin: auto;
+    margin-bottom: 4rem;
+}
+
+div.content0>h2 {
+    margin-bottom: 1rem;
+}
+
+div.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+div.content>img {
+    width: 50%;
+    margin-right: 4rem;
+}
+
+div.sub-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding-right: 2rem;
+}
+
+div.sub-content>h3 {
+    margin-bottom: .5rem;
+}
+
+div.sub-content>p {
+    margin-bottom: 3rem;
+}
+
+.content2 {
+    width: 35rem;
+    margin: auto;
+    margin-bottom: 4rem;
+}
+
+.content2>h2 {
+    margin-bottom: 1rem;
+}
+
+.imgdev {
+    width: 60%;
+    margin: auto;
+}
+
+.content3 {
+    margin-bottom: 5rem;
+}
+
+.content3>h2 {
+    margin-bottom: 1rem;
+}
+
+.list {
+    display: flex;
+    margin-bottom: 10rem;
+    justify-content: center;
+}
+
+.element {
+    width: 18rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.element>img {
+    margin-bottom: 2rem;
+}
+
+.element>h3 {
+    margin-bottom: 1rem;
+}
+
+.logos {
+    margin: 0rem 5rem;
+    margin-bottom: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.content4 {
+    margin-bottom: 3rem;
+}
+
+.content4>h2 {
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: #909ba13b;
+    display: flex;
+    flex-direction: row;
+    height: 8rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.fimg>img {
+    height: 4rem;
+    width: 4rem;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 4rem;
+    translate: -20% 0;
+}
+
+.links>a {
+    height: 2rem;
+    margin-right: 4rem;
+    text-decoration: none;
+    font-weight: 1.2em;
+}
+
+.links>a:hover {
+    color: #24b8a2;
+}
+
+.socialmedia {
+    align-self: center;
+    display: block;
+}
+
+.socialmedia>a {
+    margin-right: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+
+    body {
+        background-image: url(images/bg-header-desktop.png);
+        background-position: top center;
+    }
+
+    header>h1 {
+        margin-bottom: 1rem;
+    }
+
+    header>p {
+        width: 90%;
+    }
+
+    button {
+        display: block;
+        font-family: 'Bai Jamjuree', sans-serif;
+        font-size: 1.1em;
+        width: 20rem;
+    }
+
+    .btn1 {
+        margin-bottom: 1.5rem;
+    }
+
+    main {
+        padding: 1.5rem;
+    }
+
+    div.content0 {
+        width: 100%;
+    }
+
+    div.content {
+        flex-direction: column;
+    }
+
+    div.content>img {
+        margin: auto;
+        margin-bottom: 3rem;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    div.sub-content {
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .content2 {
+        width: 100%;
+    }
+
+    .imgdev {
+        width: 100%;
+    }
+
+    .content3>h2 {
+        padding: 0 1rem;
+    }
+
+    .list {
+        flex-direction: column;
+        height: 40rem;
+    }
+
+    .element {
+        width: 20rem;
+        margin: auto;
+    }
+
+    .logos {
+        margin-bottom: 6rem;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .logos>img {
+        margin-bottom: 4rem;
+    }
+
+    .content4 {
+        margin-bottom: 3rem;
+    }
+
+    .content4>h2 {
+        margin-bottom: 1rem;
+    }
+
+    footer {
+        flex-direction: column;
+        min-height: 30rem;
+    }
+
+    footer>img {
+        margin: auto;
+        margin: 3rem 0;
+    }
+
+    .links {
+        flex-wrap: nowrap;
+        min-height: 1rem;
+        margin-bottom: 3rem;
+        text-align: center;
+        translate: 0% 0%;
+    }
+
+    .links>a {
+        margin-right: 0rem;
+        margin-bottom: 1rem;
+    }
+
+    .socialmedia {
+        display: block;
+        margin-top: 7rem;
+        align-self: center;
+    }
+
+    .socialmedia>a {
+        margin: 0 1.2rem;
+    }
+
+}
