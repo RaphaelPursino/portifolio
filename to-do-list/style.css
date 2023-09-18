@@ -101,3 +101,28 @@ ul li span:hover {
     background: #edeef0;
     cursor: pointer;
 }
+
+@media screen and (max-width: 570px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .todo-list {
+        max-width: 25rem;
+        margin: 1rem auto;
+    }
+
+    .row {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    #taskInput {
+        text-align: center;
+        margin: auto;
+    }
+
+    .row button {
+        margin: 1rem;
+    }
+}
